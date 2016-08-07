@@ -193,6 +193,19 @@ namespace wman.Core.WebCore {
 
     public class Query : Dictionary<String, string>
     {
+        public Query()
+        {
+                
+        }
+
+        public Query(Dictionary<string, string> parentDictionary)
+        {
+            foreach (var p in parentDictionary)
+            {
+                    Add(p.Key, p.Value);
+            }
+        }
+
         public T GetValue<T>(string key)
         {
             var conv = TypeDescriptor.GetConverter(typeof(T));

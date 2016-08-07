@@ -49,26 +49,53 @@ namespace wman
             }
         }
 
+        Query GetQuery(string uri)
+        {
+            var q = uri.Split(new[] { '?' }, StringSplitOptions.RemoveEmptyEntries);
+            if (q.Length > 0)
+            {
+                return new Query(HttpUtility.ParseQueryString(q[1]).ToDictionary());
+            }
+            else
+            {
+                return new Query();
+            }
+        }
+
         private object[] MapParameter(HttpProcessor httpProcessor, MethodInfo m)
         {
             var uri = new Uri(httpProcessor.http_url, UriKind.Relative);
             var ret = new List<object>();
 
-            var query = HttpUtility.ParseQueryString(uri.OriginalString.Replace("/", ""));
+            var query = GetQuery(httpProcessor.http_url);
             if (uri.OriginalString.Contains("?"))
             {
                 foreach (var p in m.GetParameters())
                 {
                     var conv = TypeDescriptor.GetConverter(p.ParameterType);
 
-                    if (conv.CanConvertFrom(typeof (string)))
+                    if (query.ContainsKey(p.Name))
                     {
-                        ret.Add(conv.ConvertFrom(query[p.Name]));
+                        if (conv.CanConvertFrom(typeof (string)))
+                        {
+                            ret.Add(conv.ConvertFrom(query[p.Name]));
+                        }
+                        else
+                        {
+                            ret.Add(query);
+                        }
                     }
                     else
                     {
-                        ret.Add(query);
+                        ret.Add(null);
                     }
+                }
+            }
+            else
+            {
+                for (int index = 0; index < m.GetParameters().Length; index++)
+                {
+                    ret.Add(null);
                 }
             }
 
@@ -102,6 +129,18 @@ namespace wman
         public static void MapRoute(Type controller)
         {
             _controllers.Add(controller);
+        }
+
+        public static void Search()
+        {
+            var ass = Assembly.GetCallingAssembly();
+            foreach (var type in ass.GetTypes())
+            {
+                if (type.BaseType?.FullName == typeof (RouteController).FullName)
+                {
+                    _controllers.Add(type);
+                }
+            }
         }
 
         public static KeyValuePair<string, RouteController> MatchController(string url, HttpProcessor p)
@@ -167,7 +206,7 @@ namespace wman
 
         public RouteAttribute()
         {
-            Pattern = "/";
+            Pattern = "/$";
         }
     }
 }

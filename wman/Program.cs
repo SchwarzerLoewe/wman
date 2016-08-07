@@ -24,7 +24,8 @@ namespace wman
                     var httpServer = new RoutableHttpServer(8080);
 
                     Console.WriteLine("WebServer started at: http://localhost:8080/");
-                    RouteTable.MapRoute(typeof(IndexController));
+                    
+                    RouteTable.Search();
 
                     Thread thread = new Thread(httpServer.listen);
                     thread.Start();
