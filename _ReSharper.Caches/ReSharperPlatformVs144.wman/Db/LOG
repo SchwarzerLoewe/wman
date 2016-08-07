@@ -1,14 +1,23 @@
-2016/08/07-15:30:38.842 15e8 Recovering log #95
-2016/08/07-15:30:38.849 15e8 Level-0 table #109: started
-2016/08/07-15:30:39.095 15e8 Level-0 table #109: 787033 bytes OK
-2016/08/07-15:30:39.187 15e8 Delete type=0 #95
-2016/08/07-15:30:39.188 15e8 Delete type=3 #93
-2016/08/07-15:30:53.642 3f0 Compacting 1@0 + 2@1 files
-2016/08/07-15:30:53.702 3f0 Generated table #111: 51 keys, 12321 bytes
-2016/08/07-15:30:54.072 3f0 Generated table #112: 3331 keys, 2161720 bytes
-2016/08/07-15:30:54.276 3f0 Generated table #113: 515 keys, 145998 bytes
-2016/08/07-15:30:54.276 3f0 Compacted 1@0 + 2@1 files => 2320039 bytes
-2016/08/07-15:30:54.346 3f0 Delete type=2 #96
-2016/08/07-15:30:54.354 3f0 Delete type=2 #97
-2016/08/07-15:30:54.357 3f0 Delete type=2 #109
-2016/08/07-15:30:54.359 3f0 compacted to: files[ 0 3 21 0 0 0 0 ]
+2016/08/07-15:36:14.638 ce8 Recovering log #110
+2016/08/07-15:36:14.639 ce8 Level-0 table #115: started
+2016/08/07-15:36:14.794 ce8 Level-0 table #115: 22697 bytes OK
+2016/08/07-15:36:14.901 ce8 Delete type=0 #110
+2016/08/07-15:36:14.902 ce8 Delete type=3 #108
+2016/08/07-15:36:26.600 167c Compacting 1@0 + 3@1 files
+2016/08/07-15:36:26.671 167c Generated table #117: 63 keys, 15374 bytes
+2016/08/07-15:36:27.068 167c Generated table #118: 3331 keys, 2161720 bytes
+2016/08/07-15:36:27.135 167c Generated table #119: 575 keys, 146947 bytes
+2016/08/07-15:36:27.135 167c Compacted 1@0 + 3@1 files => 2324041 bytes
+2016/08/07-15:36:27.167 167c Delete type=2 #111
+2016/08/07-15:36:27.168 167c Delete type=2 #112
+2016/08/07-15:36:27.169 167c Delete type=2 #113
+2016/08/07-15:36:27.170 167c Delete type=2 #115
+2016/08/07-15:36:27.171 167c compacted to: files[ 0 3 21 0 0 0 0 ]
+2016/08/07-16:19:51.175 167c Compacting 1@1 + 2@2 files
+2016/08/07-16:19:52.050 167c Generated table #120: 2673 keys, 2200940 bytes
+2016/08/07-16:19:52.183 167c Generated table #121: 393 keys, 1961664 bytes
+2016/08/07-16:19:52.183 167c Compacted 1@1 + 2@2 files => 4162604 bytes
+2016/08/07-16:19:52.212 167c Delete type=2 #106
+2016/08/07-16:19:52.213 167c Delete type=2 #107
+2016/08/07-16:19:52.214 167c Delete type=2 #119
+2016/08/07-16:19:52.214 167c compacted to: files[ 0 2 21 0 0 0 0 ]

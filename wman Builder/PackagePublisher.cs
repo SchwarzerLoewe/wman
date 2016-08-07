@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using NuGet;
+using wman.Core;
 
 namespace wman_Builder
 {
@@ -11,25 +12,20 @@ namespace wman_Builder
             ps.PushPackage(apiKey, pkg, size, 1800, false);
         }
 
-        public static IPackage CreatePackage()
+        public static void CreatePackage(string path, ManifestMetadata metadata, Man man)
         {
-            ManifestMetadata metadata = new ManifestMetadata()
-            {
-                Authors = "mauvo",
-                Version = "1.0.0.0",
-                Id = "myPackageIdentifier",
-                Description = "A description",
-            };
-
             PackageBuilder builder = new PackageBuilder();
-            builder.PopulateFiles("folderPath/", new[] { new ManifestFile() { Source = "**" } });
             builder.Populate(metadata);
-            
-            using (FileStream stream = File.Open(packagePath, FileMode.OpenOrCreate))
+
+            var tmpFile = Path.GetTempFileName();
+            man.Save(tmpFile);
+
+            builder.Files.Add(new PhysicalPackageFile {SourcePath = tmpFile});
+
+            using (FileStream stream = File.Open(path, FileMode.OpenOrCreate))
             {
                 builder.Save(stream);
             }
-            PackageHelper.ResolvePackage()
         }
     }
 }

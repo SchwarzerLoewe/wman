@@ -3,3 +3,24 @@ c:\Users\chris\documents\visual studio 2015\Projects\wman\wman Builder\obj\Debug
 c:\Users\chris\documents\visual studio 2015\Projects\wman\wman Builder\obj\Debug\wman_Builder.Properties.Resources.resources
 c:\Users\chris\documents\visual studio 2015\Projects\wman\wman Builder\obj\Debug\wman Builder.csproj.GenerateResource.Cache
 c:\Users\chris\documents\visual studio 2015\Projects\wman\wman Builder\obj\Debug\wman Builder.exe.licenses
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\wman Builder.exe.config
+C:\Users\chris\Documents\GitHub\wman\wman Builder\obj\Debug\wman Builder.csprojResolveAssemblyReference.cache
+C:\Users\chris\Documents\GitHub\wman\wman Builder\obj\Debug\wman_Builder.MainForm.resources
+C:\Users\chris\Documents\GitHub\wman\wman Builder\obj\Debug\wman_Builder.Properties.Resources.resources
+C:\Users\chris\Documents\GitHub\wman\wman Builder\obj\Debug\wman Builder.csproj.GenerateResource.Cache
+C:\Users\chris\Documents\GitHub\wman\wman Builder\obj\Debug\wman Builder.exe.licenses
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\wman Builder.exe
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\wman Builder.pdb
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\NuGet.Core.dll
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\Telerik.WinControls.dll
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\Telerik.WinControls.RadDock.dll
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\TelerikCommon.dll
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\wman.Core.dll
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\wman.Core.pdb
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\Telerik.WinControls.xml
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\Telerik.WinControls.RadDock.xml
+C:\Users\chris\Documents\GitHub\wman\wman Builder\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\chris\Documents\GitHub\wman\wman Builder\obj\Debug\wman Builder.exe
+C:\Users\chris\Documents\GitHub\wman\wman Builder\obj\Debug\wman Builder.pdb

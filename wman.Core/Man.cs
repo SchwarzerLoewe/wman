@@ -12,7 +12,7 @@ namespace wman.Core
     [ContentProperty("Pages")]
     public class Man
     {
-        public const string ManFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)) + "\\wman\\";
+        public string ManFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\wman\\";
 
         public List<Page> Pages { get; set; } = new List<Page>();
 
