@@ -1,0 +1,36 @@
+2016/08/07-15:18:25.471 1d9c Recovering log #60
+2016/08/07-15:18:25.492 1d9c Level-0 table #94: started
+2016/08/07-15:18:25.924 1d9c Level-0 table #94: 2829696 bytes OK
+2016/08/07-15:18:26.232 1d9c Delete type=0 #60
+2016/08/07-15:18:26.233 1d9c Delete type=3 #2
+2016/08/07-15:18:41.534 21d4 Compacting 1@0 + 2@1 files
+2016/08/07-15:18:41.607 21d4 Generated table #96: 28 keys, 6396 bytes
+2016/08/07-15:18:42.011 21d4 Generated table #97: 3331 keys, 2161720 bytes
+2016/08/07-15:18:42.317 21d4 Generated table #98: 1365 keys, 826035 bytes
+2016/08/07-15:18:42.317 21d4 Compacted 1@0 + 2@1 files => 2994151 bytes
+2016/08/07-15:18:42.360 21d4 Delete type=2 #67
+2016/08/07-15:18:42.361 21d4 Delete type=2 #68
+2016/08/07-15:18:42.362 21d4 Delete type=2 #94
+2016/08/07-15:18:42.363 21d4 compacted to: files[ 0 3 21 0 0 0 0 ]
+2016/08/07-15:18:49.261 21d4 Compacting 1@1 + 9@2 files
+2016/08/07-15:18:49.578 21d4 Generated table #99: 3130 keys, 2163603 bytes
+2016/08/07-15:18:49.966 21d4 Generated table #100: 3010 keys, 2162151 bytes
+2016/08/07-15:18:50.415 21d4 Generated table #101: 3241 keys, 2161517 bytes
+2016/08/07-15:18:50.905 21d4 Generated table #102: 2781 keys, 2179676 bytes
+2016/08/07-15:18:51.197 21d4 Generated table #103: 2367 keys, 2201985 bytes
+2016/08/07-15:18:51.454 21d4 Generated table #104: 3005 keys, 2178710 bytes
+2016/08/07-15:18:51.738 21d4 Generated table #105: 2537 keys, 2189269 bytes
+2016/08/07-15:18:52.091 21d4 Generated table #106: 2669 keys, 2210238 bytes
+2016/08/07-15:18:52.227 21d4 Generated table #107: 392 keys, 1959575 bytes
+2016/08/07-15:18:52.227 21d4 Compacted 1@1 + 9@2 files => 19406724 bytes
+2016/08/07-15:18:52.259 21d4 Delete type=2 #32
+2016/08/07-15:18:52.272 21d4 Delete type=2 #33
+2016/08/07-15:18:52.273 21d4 Delete type=2 #34
+2016/08/07-15:18:52.275 21d4 Delete type=2 #35
+2016/08/07-15:18:52.276 21d4 Delete type=2 #88
+2016/08/07-15:18:52.277 21d4 Delete type=2 #89
+2016/08/07-15:18:52.278 21d4 Delete type=2 #90
+2016/08/07-15:18:52.279 21d4 Delete type=2 #91
+2016/08/07-15:18:52.280 21d4 Delete type=2 #92
+2016/08/07-15:18:52.281 21d4 Delete type=2 #98
+2016/08/07-15:18:52.282 21d4 compacted to: files[ 0 2 21 0 0 0 0 ]

@@ -1,0 +1,5 @@
+c:\Users\chris\documents\visual studio 2015\Projects\wman\wman Builder\obj\Debug\wman Builder.csprojResolveAssemblyReference.cache
+c:\Users\chris\documents\visual studio 2015\Projects\wman\wman Builder\obj\Debug\wman_Builder.MainForm.resources
+c:\Users\chris\documents\visual studio 2015\Projects\wman\wman Builder\obj\Debug\wman_Builder.Properties.Resources.resources
+c:\Users\chris\documents\visual studio 2015\Projects\wman\wman Builder\obj\Debug\wman Builder.csproj.GenerateResource.Cache
+c:\Users\chris\documents\visual studio 2015\Projects\wman\wman Builder\obj\Debug\wman Builder.exe.licenses

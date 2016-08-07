@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wman", "wman\wman.csproj", "{598113BC-F805-4AC1-9F26-ECD562B5D89B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wman Builder", "wman Builder\wman Builder.csproj", "{ED3287F5-5D16-4CCF-A386-6D45D5290DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wman.Core", "wman.Core\wman.Core.csproj", "{E8AECB01-0CC2-4F75-9715-0313DB24C839}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{598113BC-F805-4AC1-9F26-ECD562B5D89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598113BC-F805-4AC1-9F26-ECD562B5D89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598113BC-F805-4AC1-9F26-ECD562B5D89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598113BC-F805-4AC1-9F26-ECD562B5D89B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED3287F5-5D16-4CCF-A386-6D45D5290DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3287F5-5D16-4CCF-A386-6D45D5290DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3287F5-5D16-4CCF-A386-6D45D5290DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3287F5-5D16-4CCF-A386-6D45D5290DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8AECB01-0CC2-4F75-9715-0313DB24C839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8AECB01-0CC2-4F75-9715-0313DB24C839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8AECB01-0CC2-4F75-9715-0313DB24C839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8AECB01-0CC2-4F75-9715-0313DB24C839}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
