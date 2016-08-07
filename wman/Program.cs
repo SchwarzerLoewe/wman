@@ -1,4 +1,6 @@
-﻿namespace wman
+﻿using System;
+
+namespace wman
 {
     class Program
     {
@@ -17,6 +19,8 @@
                     PageViewer.Show(args);
                 }
             }
+
+            Console.ReadLine();
         }
     }
 }

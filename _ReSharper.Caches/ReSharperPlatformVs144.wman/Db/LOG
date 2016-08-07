@@ -1,23 +1,45 @@
-2016/08/07-15:36:14.638 ce8 Recovering log #110
-2016/08/07-15:36:14.639 ce8 Level-0 table #115: started
-2016/08/07-15:36:14.794 ce8 Level-0 table #115: 22697 bytes OK
-2016/08/07-15:36:14.901 ce8 Delete type=0 #110
-2016/08/07-15:36:14.902 ce8 Delete type=3 #108
-2016/08/07-15:36:26.600 167c Compacting 1@0 + 3@1 files
-2016/08/07-15:36:26.671 167c Generated table #117: 63 keys, 15374 bytes
-2016/08/07-15:36:27.068 167c Generated table #118: 3331 keys, 2161720 bytes
-2016/08/07-15:36:27.135 167c Generated table #119: 575 keys, 146947 bytes
-2016/08/07-15:36:27.135 167c Compacted 1@0 + 3@1 files => 2324041 bytes
-2016/08/07-15:36:27.167 167c Delete type=2 #111
-2016/08/07-15:36:27.168 167c Delete type=2 #112
-2016/08/07-15:36:27.169 167c Delete type=2 #113
-2016/08/07-15:36:27.170 167c Delete type=2 #115
-2016/08/07-15:36:27.171 167c compacted to: files[ 0 3 21 0 0 0 0 ]
-2016/08/07-16:19:51.175 167c Compacting 1@1 + 2@2 files
-2016/08/07-16:19:52.050 167c Generated table #120: 2673 keys, 2200940 bytes
-2016/08/07-16:19:52.183 167c Generated table #121: 393 keys, 1961664 bytes
-2016/08/07-16:19:52.183 167c Compacted 1@1 + 2@2 files => 4162604 bytes
-2016/08/07-16:19:52.212 167c Delete type=2 #106
-2016/08/07-16:19:52.213 167c Delete type=2 #107
-2016/08/07-16:19:52.214 167c Delete type=2 #119
-2016/08/07-16:19:52.214 167c compacted to: files[ 0 2 21 0 0 0 0 ]
+2016/08/07-16:26:03.616 1188 Recovering log #124
+2016/08/07-16:26:03.616 1188 Level-0 table #129: started
+2016/08/07-16:26:03.743 1188 Level-0 table #129: 80114 bytes OK
+2016/08/07-16:26:03.868 1188 Delete type=0 #124
+2016/08/07-16:26:03.868 1188 Delete type=3 #122
+2016/08/07-16:26:20.656 20b4 Compacting 1@0 + 3@1 files
+2016/08/07-16:26:20.788 20b4 Generated table #131: 71 keys, 16676 bytes
+2016/08/07-16:26:21.185 20b4 Generated table #132: 3331 keys, 2161720 bytes
+2016/08/07-16:26:21.258 20b4 Generated table #133: 528 keys, 165798 bytes
+2016/08/07-16:26:21.258 20b4 Compacted 1@0 + 3@1 files => 2344194 bytes
+2016/08/07-16:26:21.286 20b4 compacted to: files[ 0 3 21 0 0 0 0 ]
+2016/08/07-16:33:00.750 20b4 Compacting 1@1 + 2@2 files
+2016/08/07-16:33:01.113 20b4 Generated table #134: 2631 keys, 2177328 bytes
+2016/08/07-16:33:01.236 20b4 Generated table #135: 461 keys, 2041743 bytes
+2016/08/07-16:33:01.236 20b4 Compacted 1@1 + 2@2 files => 4219071 bytes
+2016/08/07-16:33:01.267 20b4 Delete type=2 #120
+2016/08/07-16:33:01.267 20b4 Delete type=2 #121
+2016/08/07-16:33:01.267 20b4 Delete type=2 #125
+2016/08/07-16:33:01.267 20b4 Delete type=2 #126
+2016/08/07-16:33:01.267 20b4 Delete type=2 #127
+2016/08/07-16:33:01.267 20b4 Delete type=2 #129
+2016/08/07-16:33:01.267 20b4 Delete type=2 #133
+2016/08/07-16:33:01.267 20b4 compacted to: files[ 0 2 21 0 0 0 0 ]
+2016/08/07-17:02:40.628 20b4 Level-0 table #137: started
+2016/08/07-17:02:41.181 20b4 Level-0 table #137: 3860198 bytes OK
+2016/08/07-17:02:41.198 20b4 Delete type=2 #126
+2016/08/07-17:02:41.198 20b4 Delete type=0 #130
+2016/08/07-17:03:01.114 20b4 Compacting 1@0 + 2@1 files
+2016/08/07-17:03:01.214 20b4 Generated table #138: 73 keys, 16610 bytes
+2016/08/07-17:03:01.631 20b4 Generated table #139: 3331 keys, 2161720 bytes
+2016/08/07-17:03:01.700 20b4 Generated table #140: 491 keys, 182485 bytes
+2016/08/07-17:03:01.700 20b4 Compacted 1@0 + 2@1 files => 2360815 bytes
+2016/08/07-17:03:01.732 20b4 Delete type=2 #131
+2016/08/07-17:03:01.753 20b4 Delete type=2 #132
+2016/08/07-17:03:01.753 20b4 Delete type=2 #137
+2016/08/07-17:03:01.753 20b4 compacted to: files[ 0 3 21 0 0 0 0 ]
+2016/08/07-17:04:42.902 20b4 Compacting 1@1 + 2@2 files
+2016/08/07-17:04:43.323 20b4 Generated table #141: 2628 keys, 2176415 bytes
+2016/08/07-17:04:43.473 20b4 Generated table #142: 541 keys, 2101096 bytes
+2016/08/07-17:04:43.526 20b4 Generated table #143: 6 keys, 2002 bytes
+2016/08/07-17:04:43.526 20b4 Compacted 1@1 + 2@2 files => 4279513 bytes
+2016/08/07-17:04:43.542 20b4 Delete type=2 #134
+2016/08/07-17:04:43.542 20b4 Delete type=2 #135
+2016/08/07-17:04:43.557 20b4 Delete type=2 #140
+2016/08/07-17:04:43.557 20b4 compacted to: files[ 0 2 22 0 0 0 0 ]

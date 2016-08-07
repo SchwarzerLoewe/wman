@@ -1,0 +1,3 @@
+implement highlighting rule file in wman file.
+
+implement generic colorizer for highligting rule

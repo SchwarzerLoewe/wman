@@ -33,14 +33,20 @@
             this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
             this.mainMenu = new Telerik.WinControls.UI.RadMenu();
             this.fileMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.newMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.openMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.saveMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.exportMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.fileSeperator = new Telerik.WinControls.UI.RadMenuSeparatorItem();
+            this.exitMenuItem = new Telerik.WinControls.UI.RadMenuItem();
             this.mainDock = new Telerik.WinControls.UI.Docking.RadDock();
             this.packageWindow = new Telerik.WinControls.UI.Docking.ToolWindow();
             this.projectTreeView = new Telerik.WinControls.UI.RadTreeView();
+            this.treeImageList = new System.Windows.Forms.ImageList(this.components);
             this.toolTabStrip1 = new Telerik.WinControls.UI.Docking.ToolTabStrip();
             this.documentContainer1 = new Telerik.WinControls.UI.Docking.DocumentContainer();
             this.documentTabStrip1 = new Telerik.WinControls.UI.Docking.DocumentTabStrip();
             this.documentWindow = new Telerik.WinControls.UI.Docking.DocumentWindow();
-            this.treeImageList = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.mainMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainDock)).BeginInit();
             this.mainDock.SuspendLayout();
@@ -70,8 +76,58 @@
             // 
             this.fileMenuItem.AccessibleDescription = "File";
             this.fileMenuItem.AccessibleName = "File";
+            this.fileMenuItem.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.newMenuItem,
+            this.openMenuItem,
+            this.saveMenuItem,
+            this.exportMenuItem,
+            this.fileSeperator,
+            this.exitMenuItem});
             this.fileMenuItem.Name = "fileMenuItem";
             this.fileMenuItem.Text = "File";
+            // 
+            // newMenuItem
+            // 
+            this.newMenuItem.AccessibleDescription = "radMenuItem1";
+            this.newMenuItem.AccessibleName = "radMenuItem1";
+            this.newMenuItem.Name = "newMenuItem";
+            this.newMenuItem.Text = "N&ew";
+            // 
+            // openMenuItem
+            // 
+            this.openMenuItem.AccessibleDescription = "radMenuItem2";
+            this.openMenuItem.AccessibleName = "radMenuItem2";
+            this.openMenuItem.Name = "openMenuItem";
+            this.openMenuItem.Text = "O&pen";
+            // 
+            // saveMenuItem
+            // 
+            this.saveMenuItem.AccessibleDescription = "radMenuItem3";
+            this.saveMenuItem.AccessibleName = "radMenuItem3";
+            this.saveMenuItem.Name = "saveMenuItem";
+            this.saveMenuItem.Text = "S&ave";
+            // 
+            // exportMenuItem
+            // 
+            this.exportMenuItem.AccessibleDescription = "radMenuItem4";
+            this.exportMenuItem.AccessibleName = "radMenuItem4";
+            this.exportMenuItem.Name = "exportMenuItem";
+            this.exportMenuItem.Text = "E&xport";
+            // 
+            // fileSeperator
+            // 
+            this.fileSeperator.AccessibleDescription = "radMenuSeparatorItem1";
+            this.fileSeperator.AccessibleName = "radMenuSeparatorItem1";
+            this.fileSeperator.Name = "fileSeperator";
+            this.fileSeperator.Text = "radMenuSeparatorItem1";
+            this.fileSeperator.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // exitMenuItem
+            // 
+            this.exitMenuItem.AccessibleDescription = "radMenuItem5";
+            this.exitMenuItem.AccessibleName = "radMenuItem5";
+            this.exitMenuItem.Name = "exitMenuItem";
+            this.exitMenuItem.Text = "Exit";
             // 
             // mainDock
             // 
@@ -116,6 +172,13 @@
             this.projectTreeView.SmallImageList = this.treeImageList;
             this.projectTreeView.TabIndex = 0;
             this.projectTreeView.ThemeName = "VisualStudio2012Light";
+            // 
+            // treeImageList
+            // 
+            this.treeImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("treeImageList.ImageStream")));
+            this.treeImageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.treeImageList.Images.SetKeyName(0, "document.ico");
+            this.treeImageList.Images.SetKeyName(1, "function.ico");
             // 
             // toolTabStrip1
             // 
@@ -176,13 +239,6 @@
             this.documentWindow.Size = new System.Drawing.Size(636, 351);
             this.documentWindow.Text = "Document";
             // 
-            // treeImageList
-            // 
-            this.treeImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("treeImageList.ImageStream")));
-            this.treeImageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.treeImageList.Images.SetKeyName(0, "document.ico");
-            this.treeImageList.Images.SetKeyName(1, "function.ico");
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +285,12 @@
         private Telerik.WinControls.UI.Docking.DocumentTabStrip documentTabStrip1;
         private Telerik.WinControls.UI.RadTreeView projectTreeView;
         private System.Windows.Forms.ImageList treeImageList;
+        private Telerik.WinControls.UI.RadMenuItem newMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem openMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem saveMenuItem;
+        private Telerik.WinControls.UI.RadMenuItem exportMenuItem;
+        private Telerik.WinControls.UI.RadMenuSeparatorItem fileSeperator;
+        private Telerik.WinControls.UI.RadMenuItem exitMenuItem;
     }
 }
 
