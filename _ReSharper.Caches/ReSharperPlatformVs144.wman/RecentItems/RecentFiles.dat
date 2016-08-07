@@ -1,31 +1,43 @@
 ﻿<RecentFiles>
   <RecentFiles>
     <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Utilities.cs" caret="35" fromTop="0" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="81" fromTop="4" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="376" fromTop="3" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="70" fromTop="4" />
     <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PackageInstaller.cs" caret="303" fromTop="4" />
     <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:PackagePublisher.cs" caret="887" fromTop="10" />
+    <File id="8B77F5B0-57D4-4D8B-8A91-F68551BF6215/f:ToDo.txt/s:..?ToDo.txt" caret="46" fromTop="0" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:ColorConsole.cs" caret="228" fromTop="10" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Colorizer.cs" caret="565" fromTop="11" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="141" fromTop="0" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="429" fromTop="6" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="475" fromTop="12" />
   </RecentFiles>
   <RecentEdits>
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PackageInstaller.cs" caret="522" fromTop="14" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="421" fromTop="16" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="81" fromTop="4" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="476" fromTop="4" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PackageInstaller.cs" caret="355" fromTop="9" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="0" fromTop="0" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="70" fromTop="4" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="883" fromTop="12" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="1247" fromTop="18" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="286" fromTop="6" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="393" fromTop="4" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PackageInstaller.cs" caret="548" fromTop="8" />
-    <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:PackagePublisher.cs" caret="0" fromTop="0" />
-    <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:PackagePublisher.cs" caret="89" fromTop="4" />
-    <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:PackagePublisher.cs" caret="183" fromTop="6" />
-    <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:PackagePublisher.cs" caret="437" fromTop="14" />
-    <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:PackagePublisher.cs" caret="669" fromTop="9" />
     <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:PackagePublisher.cs" caret="901" fromTop="15" />
     <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:PackagePublisher.cs" caret="1100" fromTop="13" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="423" fromTop="14" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="274" fromTop="10" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="2424" fromTop="18" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="472" fromTop="14" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="1090" fromTop="16" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="2000" fromTop="18" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="644" fromTop="9" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="63" fromTop="5" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="156" fromTop="9" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="0" fromTop="0" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="1488" fromTop="9" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="1785" fromTop="14" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="2409" fromTop="13" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="2190" fromTop="11" />
+    <File id="8B77F5B0-57D4-4D8B-8A91-F68551BF6215/f:ToDo.txt/s:..?ToDo.txt" caret="46" fromTop="0" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Colorizer.cs" caret="752" fromTop="5" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Colorizer.cs" caret="114" fromTop="7" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Colorizer.cs" caret="752" fromTop="18" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Colorizer.cs" caret="752" fromTop="1" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="2110" fromTop="9" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="2721" fromTop="12" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="2721" fromTop="11" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="2721" fromTop="7" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="141" fromTop="6" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="869" fromTop="8" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="588" fromTop="5" />
   </RecentEdits>
 </RecentFiles>

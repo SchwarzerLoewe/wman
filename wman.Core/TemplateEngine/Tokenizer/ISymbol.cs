@@ -1,0 +1,32 @@
+﻿using wman.Core.TemplateEngine.Text;
+
+namespace wman.Core.TemplateEngine.Tokenizer
+{
+    /// <summary>
+	/// Defines the required contract for implementing a symbol.
+	/// </summary>
+	public interface ISymbol
+	{
+		/// <summary>
+		/// Gets the content of the symbol.
+		/// </summary>
+		string Content { get; }
+
+		/// <summary>
+		/// Gets the start of the symbol.
+		/// </summary>
+		SourceLocation Start { get; }
+
+		/// <summary>
+		/// Changes the start of the symbol.
+		/// </summary>
+		/// <param name="newStart">The new start.</param>
+		void ChangeStart(SourceLocation newStart);
+
+		/// <summary>
+		/// Offsets the start of the symbol based on the document start.
+		/// </summary>
+		/// <param name="documentStart">The document start.</param>
+		void OffsetStart(SourceLocation documentStart);
+	}
+}

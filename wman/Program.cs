@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading;
+using wman.Controllers;
+using wman.Core.WebCore;
 
 namespace wman
 {
@@ -6,6 +10,7 @@ namespace wman
     {
         //wman cpp 3 cout
         //wman install cpp
+        //wman -web
         static void Main(string[] args)
         {
             if (args.Length > 0)
@@ -13,6 +18,16 @@ namespace wman
                 if (args[0] == "install")
                 {
                     PackageInstaller.Install(args[1]);
+                }
+                else if (args[0] == "-web")
+                {
+                    var httpServer = new RoutableHttpServer(8080);
+
+                    Console.WriteLine("WebServer started at: http://localhost:8080/");
+                    RouteTable.MapRoute(typeof(IndexController));
+
+                    Thread thread = new Thread(httpServer.listen);
+                    thread.Start();
                 }
                 else
                 {
