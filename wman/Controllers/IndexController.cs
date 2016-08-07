@@ -12,7 +12,7 @@ namespace wman.Controllers
         }
 
         [Route]
-        public void Home(int my)
+        public void Home(int my, string s)
         {
             Success();
 

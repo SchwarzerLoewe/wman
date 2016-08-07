@@ -31,10 +31,18 @@ namespace wman
                     {
                         if (Regex.IsMatch(p.http_url, att.Pattern))
                         {
-                            m.Invoke(ctrl,
-                                m.GetParameters().Any(_ => _.ParameterType == typeof (Query))
-                                    ? UriToParamater(p)
-                                    : MapParameter(p, m));
+                            var param = m.GetParameters();
+                            if (param.Length > 0)
+                            {
+                                m.Invoke(ctrl.Value,
+                                    param.Any(_ => _.ParameterType == typeof (Query))
+                                        ? UriToParamater(p)
+                                        : MapParameter(p, m));
+                            }
+                            else
+                            {
+                                m.Invoke(ctrl.Value, null);
+                            }
                         }
                     }
                 }
@@ -56,6 +64,10 @@ namespace wman
                     if (conv.CanConvertFrom(typeof (string)))
                     {
                         ret.Add(conv.ConvertFrom(query[p.Name]));
+                    }
+                    else
+                    {
+                        ret.Add(query);
                     }
                 }
             }
