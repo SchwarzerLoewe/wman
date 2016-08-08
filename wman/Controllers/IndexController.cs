@@ -36,12 +36,12 @@ namespace wman.Controllers
         public string OnError(Exception e)
         {
             var templ = Resources.Template;
-            string content = "{{#with error}}{{msg}}<br/>{{stack}}{{/with}}";
+            string content = "{{#with error}}{{stack}}{{/with}}";
             templ = templ.Replace(":content:", content);
 
             var template = Handlebars.Compile("error", templ);
 
-            return template(new {error = new { msg = e.InnerException?.Message, stack = e.ToString() }});
+            return template(new {error = new { stack = e.ToString() }});
         }
     }
 
