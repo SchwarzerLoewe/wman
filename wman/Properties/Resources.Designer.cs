@@ -69,5 +69,26 @@ namespace wman.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &lt;!DOCTYPE html&gt;
+        ///&lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;
+        ///&lt;head&gt;
+        ///&lt;title&gt;{{title}}&lt;/title&gt;
+        ///{{icon &apos;favicon&apos;}}
+        ///&lt;meta charset=&quot;iso-8859-1&quot;&gt;
+        ///&lt;style&gt;
+        ///html{overflow-y:scroll;} /* Forces a scrollbar when the viewport is larger than the websites content - CSS3 */
+        ///
+        ///body{margin:0; padding:0; font-size:13px; font-family:Georgia, &quot;Times New Roman&quot;, Times, serif; color:#919191; background-color:#232323;}
+        ///
+        ///.clear:after{content:&quot;.&quot;; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+        ///.clear{display:block; [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        internal static string Template {
+            get {
+                return ResourceManager.GetString("Template", resourceCulture);
+            }
+        }
     }
 }

@@ -79,7 +79,7 @@
   <ItemGroup>
     <Content Include="1470591561_Manual.ico" />
     <Content Include="FodyWeavers.xml" />
-    <None Include="Resources\hello.txt" />
+    <Content Include="Resources\Template.html" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\wman.Core\wman.Core.csproj">
