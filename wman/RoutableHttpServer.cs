@@ -19,35 +19,13 @@ namespace wman
 
         public override void handleGETRequest(HttpProcessor p)
         {
-            var ctrl = RouteTable.MatchController(p.http_url, p);
-            var t = ctrl.Value.GetType().GetMethods();
-            
-            if (p.http_url.StartsWith(ctrl.Key))
-            {
-                foreach (var m in t)
-                {
-                    var att = m.GetCustomAttribute<RouteAttribute>();
-                    if (att != null)
-                    {
-                        if (Regex.IsMatch(p.http_url, att.Pattern))
-                        {
-                            var param = m.GetParameters();
-                            if (param.Length > 0)
-                            {
-                                m.Invoke(ctrl.Value,
-                                    param.Any(_ => _.ParameterType == typeof (Query))
-                                        ? UriToParamater(p)
-                                        : MapParameter(p, m));
-                            }
-                            else
-                            {
-                                m.Invoke(ctrl.Value, null);
-                            }
-                        }
-                    }
-                }
-            }
+            Invoke(p, null);
         }
+        public override void handlePOSTRequest(HttpProcessor p, StreamReader inputData)
+        {
+            Invoke(p, inputData);
+        }
+
 
         Query GetQuery(string uri)
         {
@@ -93,6 +71,7 @@ namespace wman
             }
             else
             {
+                // if no query given, inject null to all parameters
                 for (int index = 0; index < m.GetParameters().Length; index++)
                 {
                     ret.Add(null);
@@ -115,10 +94,39 @@ namespace wman
 
             return ret.ToArray();
         }
-
-        public override void handlePOSTRequest(HttpProcessor p, StreamReader inputData)
+        
+        private void Invoke(HttpProcessor p, StreamReader input)
         {
-            p.writeFailure();
+            var ctrl = RouteTable.MatchController(p.http_url, p);
+            var t = ctrl.Value.GetType().GetMethods();
+
+            ctrl.Value.InputStream = input;
+            
+            if (p.http_url.StartsWith(ctrl.Key))
+            {
+                foreach (var m in t)
+                {
+                    var att = m.GetCustomAttribute<RouteAttribute>();
+                    if (att != null)
+                    {
+                        if (Regex.IsMatch(p.http_url, att.Pattern))
+                        {
+                            var param = m.GetParameters();
+                            if (param.Length > 0)
+                            {
+                                m.Invoke(ctrl.Value,
+                                    param.Any(_ => _.ParameterType == typeof(Query))
+                                        ? UriToParamater(p)
+                                        : MapParameter(p, m));
+                            }
+                            else
+                            {
+                                m.Invoke(ctrl.Value, null);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -169,6 +177,7 @@ namespace wman
     {
         protected StreamWriter OutputStream { get; }
         public string Route { get; set; }
+        public StreamReader InputStream { get; set; }
 
         HttpProcessor p;
 

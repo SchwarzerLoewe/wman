@@ -1,14 +1,15 @@
 ﻿<RecentlyViewedMethods>
   <RecentlyViewedMethods>
-    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.RoutableHttpServer.handleGETRequest%28wman.Core.WebCore.HttpProcessor%29" />
-    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.RouteTable.Search" />
-    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.Controllers.DetailsController.Home" />
     <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.Program.Main%28System.String%5B%5D%29" />
-    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.RouteAttribute.%23ctor" />
+    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.Controllers.IndexController.%23ctor%28wman.Core.WebCore.HttpProcessor%29" />
+    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.Controllers.DetailsController.Item%28System.String%29" />
+    <RecentMethod id="e8aecb01-0cc2-4f75-9715-0313db24c839%28wman.Core%29-11CB8A77/M%3Awman.Core.TemplateEngine.Handlebars.Compile%28System.String%2CSystem.String%29" />
     <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.Controllers.IndexController.Set%28System.Int32%2CSystem.String%29" />
-    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.RoutableHttpServer.MapParameter%28wman.Core.WebCore.HttpProcessor%2CSystem.Reflection.MethodInfo%29" />
-    <RecentMethod id="e8aecb01-0cc2-4f75-9715-0313db24c839%28wman.Core%29-11CB8A77/M%3Awman.Core.WebCore.Query.%23ctor%28System.Collections.Generic.Dictionary%7BSystem.String%2CSystem.String%7D%29" />
-    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.RoutableHttpServer.GetQuery%28System.String%29" />
-    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.Controllers.DetailsController.Item%28System.Int32%29" />
+    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.Controllers.DetailsController.%23ctor%28wman.Core.WebCore.HttpProcessor%29" />
+    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.Controllers.IndexController.Home" />
+    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/P%3Awman.RouteController.InputStream" />
+    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.RoutableHttpServer.Invoke%28wman.Core.WebCore.HttpProcessor%2CSystem.IO.StreamReader%29" />
+    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.RoutableHttpServer.handlePOSTRequest%28wman.Core.WebCore.HttpProcessor%2CSystem.IO.StreamReader%29" />
+    <RecentMethod id="598113bc-f805-4ac1-9f26-ecd562b5d89b%28wman%29-1437C16/M%3Awman.RoutableHttpServer.handleGETRequest%28wman.Core.WebCore.HttpProcessor%29" />
   </RecentlyViewedMethods>
 </RecentlyViewedMethods>

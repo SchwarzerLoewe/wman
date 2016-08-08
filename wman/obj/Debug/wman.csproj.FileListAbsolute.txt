@@ -17,3 +17,5 @@ C:\Users\chris\Documents\GitHub\wman\wman\bin\Debug\wman.Core.pdb
 C:\Users\chris\Documents\GitHub\wman\wman\obj\Debug\wman.csprojResolveAssemblyReference.cache
 C:\Users\chris\Documents\GitHub\wman\wman\obj\Debug\wman.exe
 C:\Users\chris\Documents\GitHub\wman\wman\obj\Debug\wman.pdb
+C:\Users\chris\Documents\GitHub\wman\wman\obj\Debug\wman.Properties.Resources.resources
+C:\Users\chris\Documents\GitHub\wman\wman\obj\Debug\wman.csproj.GenerateResource.Cache

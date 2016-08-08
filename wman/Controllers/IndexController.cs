@@ -1,5 +1,13 @@
-﻿using wman.Core.TemplateEngine;
+﻿using System;
+using System.Collections;
+using System.Diagnostics.Contracts;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using wman.Core;
+using wman.Core.TemplateEngine;
 using wman.Core.WebCore;
+using wman.Properties;
 
 namespace wman.Controllers
 {
@@ -10,22 +18,33 @@ namespace wman.Controllers
         {
         }
 
-        [Route()]
+        [Route]
         public void Home()
         {
             Success();
 
-            OutputStream.WriteLine("Hello World");
+            var files = Directory.GetFiles(Man.ManFolder, "*.wman").Select(Path.GetFileNameWithoutExtension);
+
+            var context = new {files = files};
+
+            var template = Handlebars.Compile("index", "<html><head><title>Details</title>{{icon 'favicon'}}</head><body>{{#each files}}<a href='/Details/item?wman={{this}}'>{{this}}</a>{{/each}}</body></html>");
+
+            OutputStream.WriteLine(template(context));
         }
 
         [Route("/set")]
         public void Set(int my, string s)
         {
+            if (my <= 0) throw new ArgumentOutOfRangeException(nameof(my));
+
             Success();
 
-            string result = Handlebars.CompileAndRun("index", "Hello {{world}}! ({{my}})", new { world = s, my = my });
+            var uri = Extensions.GetDataURL(Resources.favicon.ToBitmap());
+            var context = new {world = s, my = my, favicon = uri};
 
-            OutputStream.WriteLine(result);
+            var template = Handlebars.Compile("index", "<html><head><title>Details</title><link rel='icon' href='{{favicon}}' type='image/png'></head><body>Hello {{world}}! ({{my}})</body></html>");
+
+            OutputStream.WriteLine(template(context));
             //OutputStream.WriteLine("Value: " + query.GetValue<float>("myInt"));
         }
     }
@@ -40,17 +59,20 @@ namespace wman.Controllers
         [Route]
         public void Home()
         {
-            Success();
+            Error();
 
-            OutputStream.WriteLine("Detailspage");
+            OutputStream.WriteLine("No WMan given");
         }
 
         [Route("/Details/item")]
-        public void Item(int index)
+        public void Item(string wman)
         {
             Success();
 
-            OutputStream.WriteLine("Item: " + index);
+            var template = Handlebars.Compile("details",
+                "<html><head><title>Details</title>{{icon 'favicon'}}</head><body>" + wman +"</body></html>");
+            
+            OutputStream.WriteLine(template(null));
         }
     }
 }

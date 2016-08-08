@@ -20,7 +20,6 @@ namespace wman.Core.WebCore {
         public String http_protocol_versionstring;
         public Hashtable httpHeaders = new Hashtable();
 
-
         private static int MAX_POST_SIZE = 10 * 1024 * 1024; // 10MB
 
         public HttpProcessor(TcpClient s, HttpServer srv) {
