@@ -56,7 +56,6 @@ namespace wman.Core.WebCore {
                     handlePOSTRequest();
                 }
             } catch (Exception e) {
-                Console.WriteLine("Exception: " + e);
                 writeFailure();
                 outputStream.WriteLine(e);
             }
@@ -80,11 +79,9 @@ namespace wman.Core.WebCore {
         }
 
         public void readHeaders() {
-            Console.WriteLine("readHeaders()");
             String line;
             while ((line = streamReadLine(inputStream)) != null) {
                 if (line.Equals("")) {
-                    Console.WriteLine("got headers");
                     return;
                 }
                 
@@ -99,7 +96,6 @@ namespace wman.Core.WebCore {
                 }
                     
                 string value = line.Substring(pos, line.Length - pos);
-                Console.WriteLine("header: {0}:{1}",name,value);
                 httpHeaders[name] = value;
             }
         }
