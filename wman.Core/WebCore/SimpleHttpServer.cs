@@ -158,7 +158,14 @@ namespace wman.Core.WebCore {
         }
 
         public void writeFailure() {
-            outputStream.WriteLine("HTTP/1.0 404 File not found");
+            //outputStream.WriteLine("HTTP/1.0 404 File not found");
+            outputStream.WriteLine("Connection: close");
+            outputStream.WriteLine("");
+        }
+
+        public void writeStatus(string status)
+        {
+            outputStream.WriteLine("HTTP/1.0 " + status);
             outputStream.WriteLine("Connection: close");
             outputStream.WriteLine("");
         }

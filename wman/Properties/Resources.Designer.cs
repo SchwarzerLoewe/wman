@@ -69,14 +69,5 @@ namespace wman.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die hello world ähnelt.
-        /// </summary>
-        internal static string hello {
-            get {
-                return ResourceManager.GetString("hello", resourceCulture);
-            }
-        }
     }
 }

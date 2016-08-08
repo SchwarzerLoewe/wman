@@ -18,7 +18,7 @@ namespace wman.Controllers
         {
         }
 
-        [Route]
+        [Route("/")]
         public void Home()
         {
             Success();
@@ -56,17 +56,21 @@ namespace wman.Controllers
         {
         }
 
-        [Route]
+        [Route("/Details/")]
         public void Home()
         {
-            Error();
+            Success();
 
-            OutputStream.WriteLine("No WMan given");
+            OutputStream.WriteLine("Hello world");
         }
 
         [Route("/Details/item")]
         public void Item(string wman)
         {
+            if (string.IsNullOrEmpty(wman))
+            {
+                throw new ArgumentNullException("No Wman given");
+            }
             Success();
 
             var template = Handlebars.Compile("details",

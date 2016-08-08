@@ -30,7 +30,7 @@ namespace wman
         Query GetQuery(string uri)
         {
             var q = uri.Split(new[] { '?' }, StringSplitOptions.RemoveEmptyEntries);
-            if (q.Length > 0)
+            if (q.Length > 1)
             {
                 return new Query(HttpUtility.ParseQueryString(q[1]).ToDictionary());
             }
@@ -46,7 +46,7 @@ namespace wman
             var ret = new List<object>();
 
             var query = GetQuery(httpProcessor.http_url);
-            if (uri.OriginalString.Contains("?"))
+            if (uri.OriginalString.Contains("?") && uri.OriginalString.Contains("="))
             {
                 foreach (var p in m.GetParameters())
                 {
@@ -192,14 +192,20 @@ namespace wman
             p.writeSuccess();
         }
 
-        protected void Error()
+        protected object Error()
         {
             p.writeFailure();
+            return null;
         }
 
-        protected void Redirect(string url)
+        protected void Header(string key, string value)
         {
-            p.httpHeaders.Add("Location", url);
+            p.httpHeaders.Add(key, value);
+        }
+
+        protected void Status(string status)
+        {
+            p.writeStatus(status);
         }
     }
 
@@ -211,11 +217,6 @@ namespace wman
         public RouteAttribute(string p)
         {
             Pattern = p;
-        }
-
-        public RouteAttribute()
-        {
-            Pattern = "/$";
         }
     }
 }

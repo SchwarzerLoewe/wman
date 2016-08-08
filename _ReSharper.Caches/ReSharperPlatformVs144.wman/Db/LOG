@@ -35,3 +35,47 @@
 2016/08/08-10:00:09.955 1a64 Delete type=2 #73
 2016/08/08-10:00:09.957 1a64 Delete type=2 #75
 2016/08/08-10:00:09.958 1a64 compacted to: files[ 0 2 17 0 0 0 0 ]
+2016/08/08-10:06:48.901 1a64 Compacting 1@1 + 3@2 files
+2016/08/08-10:06:49.470 1a64 Generated table #78: 2233 keys, 2177935 bytes
+2016/08/08-10:06:49.770 1a64 Generated table #79: 293 keys, 2103147 bytes
+2016/08/08-10:06:50.023 1a64 Generated table #80: 337 keys, 2302965 bytes
+2016/08/08-10:06:50.170 1a64 Generated table #81: 2299 keys, 620225 bytes
+2016/08/08-10:06:50.170 1a64 Compacted 1@1 + 3@2 files => 7204272 bytes
+2016/08/08-10:06:50.207 1a64 Delete type=2 #59
+2016/08/08-10:06:50.207 1a64 Delete type=2 #60
+2016/08/08-10:06:50.207 1a64 Delete type=2 #61
+2016/08/08-10:06:50.207 1a64 Delete type=2 #77
+2016/08/08-10:06:50.207 1a64 compacted to: files[ 0 1 18 0 0 0 0 ]
+2016/08/08-10:15:12.768 1a64 Level-0 table #83: started
+2016/08/08-10:15:13.353 1a64 Level-0 table #83: 4189350 bytes OK
+2016/08/08-10:15:13.384 1a64 Delete type=0 #74
+2016/08/08-10:26:42.789 1a64 Compacting 1@0 + 1@1 files
+2016/08/08-10:26:42.926 1a64 Generated table #84: 21 keys, 6103 bytes
+2016/08/08-10:26:43.026 1a64 Generated table #85: 173 keys, 211076 bytes
+2016/08/08-10:26:43.026 1a64 Compacted 1@0 + 1@1 files => 217179 bytes
+2016/08/08-10:26:43.057 1a64 Delete type=2 #76
+2016/08/08-10:26:43.057 1a64 Delete type=2 #83
+2016/08/08-10:26:43.057 1a64 compacted to: files[ 0 2 18 0 0 0 0 ]
+2016/08/08-10:31:10.662 1a64 Level-0 table #87: started
+2016/08/08-10:31:11.310 1a64 Level-0 table #87: 4147546 bytes OK
+2016/08/08-10:31:11.332 1a64 Delete type=0 #82
+2016/08/08-10:36:00.377 1a64 Compacting 1@0 + 2@1 files
+2016/08/08-10:36:00.493 1a64 Generated table #88: 21 keys, 6103 bytes
+2016/08/08-10:36:00.646 1a64 Generated table #89: 189 keys, 200392 bytes
+2016/08/08-10:36:00.646 1a64 Compacted 1@0 + 2@1 files => 206495 bytes
+2016/08/08-10:36:00.677 1a64 Delete type=2 #84
+2016/08/08-10:36:00.677 1a64 Delete type=2 #85
+2016/08/08-10:36:00.677 1a64 Delete type=2 #87
+2016/08/08-10:36:00.693 1a64 compacted to: files[ 0 2 18 0 0 0 0 ]
+2016/08/08-10:36:12.093 1a64 Compacting 1@1 + 4@2 files
+2016/08/08-10:36:12.545 1a64 Generated table #90: 2234 keys, 2178445 bytes
+2016/08/08-10:36:12.748 1a64 Generated table #91: 295 keys, 2105897 bytes
+2016/08/08-10:36:12.927 1a64 Generated table #92: 330 keys, 2274602 bytes
+2016/08/08-10:36:13.095 1a64 Generated table #93: 2305 keys, 622504 bytes
+2016/08/08-10:36:13.095 1a64 Compacted 1@1 + 4@2 files => 7181448 bytes
+2016/08/08-10:36:13.148 1a64 Delete type=2 #78
+2016/08/08-10:36:13.179 1a64 Delete type=2 #79
+2016/08/08-10:36:13.195 1a64 Delete type=2 #80
+2016/08/08-10:36:13.195 1a64 Delete type=2 #81
+2016/08/08-10:36:13.195 1a64 Delete type=2 #89
+2016/08/08-10:36:13.195 1a64 compacted to: files[ 0 1 18 0 0 0 0 ]
