@@ -10,7 +10,6 @@ c:\users\chris\documents\visual studio 2015\Projects\wman\wman\obj\Debug\wman.cs
 C:\Users\chris\Documents\GitHub\wman\wman\bin\Debug\wman.exe.config
 C:\Users\chris\Documents\GitHub\wman\wman\bin\Debug\wman.exe
 C:\Users\chris\Documents\GitHub\wman\wman\bin\Debug\wman.pdb
-C:\Users\chris\Documents\GitHub\wman\wman\bin\Debug\Microsoft.Web.XmlTransform.dll
 C:\Users\chris\Documents\GitHub\wman\wman\bin\Debug\NuGet.Core.dll
 C:\Users\chris\Documents\GitHub\wman\wman\bin\Debug\wman.Core.dll
 C:\Users\chris\Documents\GitHub\wman\wman\bin\Debug\wman.Core.pdb

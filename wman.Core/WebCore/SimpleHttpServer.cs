@@ -56,8 +56,8 @@ namespace wman.Core.WebCore {
                     handlePOSTRequest();
                 }
             } catch (Exception e) {
-                writeFailure();
-                outputStream.WriteLine(e);
+                //writeFailure();
+                outputStream.WriteLine(RouteTable.ErrorController?.OnError(e));
             }
             outputStream.Flush();
             // bs.Flush(); // flush any remaining output

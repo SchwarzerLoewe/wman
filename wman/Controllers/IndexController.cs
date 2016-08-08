@@ -9,7 +9,7 @@ using wman.Properties;
 namespace wman.Controllers
 {
     [Route("/")]
-    public class IndexController : RouteController
+    public class IndexController : RouteController, IErrorController
     {
         public IndexController(HttpProcessor re) : base(re)
         {
@@ -20,9 +20,10 @@ namespace wman.Controllers
         {
             Success();
 
-            var files = Directory.GetFiles(Man.ManFolder, "*.wman").Select(Path.GetFileNameWithoutExtension);
+            var files = Directory.GetFiles(Man.ManFolder, "*.wman")
+                .Select(Path.GetFileNameWithoutExtension);
 
-            var context = new {files = files, title = "WMan - Home"};
+            var context = new {files, title = "WMan - Home"};
             var templ = Resources.Template;
             string content = "{{#each files}}<a href='/Details/item?wman={{this}}'>{{this}}</a>{{/each}}";
             templ = templ.Replace(":content:", content);
@@ -30,6 +31,17 @@ namespace wman.Controllers
             var template = Handlebars.Compile("index", templ);
 
             OutputStream.WriteLine(template(context));
+        }
+
+        public string OnError(Exception e)
+        {
+            var templ = Resources.Template;
+            string content = "{{#with error}}{{msg}}<br/>{{stack}}{{/with}}";
+            templ = templ.Replace(":content:", content);
+
+            var template = Handlebars.Compile("error", templ);
+
+            return template(new {error = new { msg = e.InnerException?.Message, stack = e.ToString() }});
         }
     }
 
@@ -68,6 +80,11 @@ namespace wman.Controllers
                 {
                     current = p;
                 }
+            }
+
+            if (current == null)
+            {
+                throw new Exception("Page not found");
             }
 
             Success();

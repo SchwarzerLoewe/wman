@@ -6,10 +6,8 @@ using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Web;
-using wman.Core;
-using wman.Core.WebCore;
 
-namespace wman
+namespace wman.Core.WebCore
 {
     public class RoutableHttpServer : HttpServer
     {
@@ -133,10 +131,16 @@ namespace wman
     public static class RouteTable
     {
         static List<Type> _controllers = new List<Type>();
+        public static IErrorController ErrorController;
 
         public static void MapRoute(Type controller)
         {
             _controllers.Add(controller);
+
+            if (controller.IsAssignableFrom(typeof (IErrorController)))
+            {
+                ErrorController = (IErrorController)Activator.CreateInstance(controller);
+            }
         }
 
         public static void Search()
@@ -147,6 +151,17 @@ namespace wman
                 if (type.BaseType?.FullName == typeof (RouteController).FullName)
                 {
                     _controllers.Add(type);
+                }
+                if (typeof(IErrorController).IsAssignableFrom(type))
+                {
+                    try
+                    {
+                        ErrorController = (IErrorController) Activator.CreateInstance(type);
+                    }
+                    catch
+                    {
+                        ErrorController = (IErrorController)Activator.CreateInstance(type, new HttpProcessor(null, null));
+                    }
                 }
             }
         }
@@ -192,10 +207,9 @@ namespace wman
             p.writeSuccess();
         }
 
-        protected object Error()
+        protected void Error()
         {
             p.writeFailure();
-            return null;
         }
 
         protected void Header(string key, string value)

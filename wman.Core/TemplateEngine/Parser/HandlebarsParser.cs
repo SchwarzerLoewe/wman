@@ -258,7 +258,7 @@ namespace wman.Core.TemplateEngine.Parser
 					Context.CurrentBlock.Type = BlockType.TagElement;
 				}
 
-				while (CurrentSymbol.Type != HandlebarsSymbolType.CloseTag && CurrentSymbol.Type != HandlebarsSymbolType.RawCloseTag && CurrentSymbol.Type != HandlebarsSymbolType.Tilde)
+				while (CurrentSymbol.Type != HandlebarsSymbolType.CloseTag && CurrentSymbol.Type != HandlebarsSymbolType.RawCloseTag && CurrentSymbol?.Type != HandlebarsSymbolType.Tilde)
 				{
 					if (CurrentSymbol.Type == HandlebarsSymbolType.WhiteSpace)
 					{
