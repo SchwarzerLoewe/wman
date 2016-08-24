@@ -15,8 +15,8 @@ namespace wman.Core
     {
         public static string ManFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\wman\\";
 
-        public List<Page> Pages { get; set; } = new List<Page>();
-
+        public List<PageItem> Items { get; set; } = new List<PageItem>();
+        
         public static Man Load(string path) => (Man)XamlServices.Load(path);
 
         public void Save(string path)
@@ -26,12 +26,6 @@ namespace wman.Core
         }
     }
 
-    [ContentProperty("Items")]
-    public class Page
-    {
-        public List<PageItem> Items { get; set; } = new List<PageItem>();
-    }
-
     public class PageItem
     {
         public string Name { get; set; }
@@ -39,6 +33,7 @@ namespace wman.Core
         public string Description { get; set; }
         public string Example { get; set; }
         public string SeeAlso { get; set; }
+        public Dictionary<string, object> Properties { get; set; } = new Dictionary<string, object>();
 
         public void Print()
         {
@@ -80,6 +75,17 @@ namespace wman.Core
                 Console.ResetColor();
                 Console.WriteLine(SeeAlso);
                 Console.WriteLine();
+            }
+            if (Properties.Count > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Properties:");
+                Console.ResetColor();
+
+                foreach (var property in Properties)
+                {
+                    Console.WriteLine(property.Key + ": " + property.Value);
+                }
             }
         }
     }

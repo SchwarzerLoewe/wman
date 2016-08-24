@@ -1,4 +1,6 @@
-﻿using wman.Core;
+﻿using System;
+using System.IO;
+using wman.Core;
 
 namespace wman
 {
@@ -6,40 +8,29 @@ namespace wman
     {
         public static void Show(string[] args)
         {
-            var page = int.Parse(args[1]);
+            var man = Man.Load(GetFileName(args[0]));
 
-#if !DEBUG
-            var man = Man.Load(Man.ManFolder + "\\" + args[0] + ".wman");
-
-            foreach (var p in man.Pages[page].Items)
+            foreach (var p in man.Items)
             {
-                if (p.Name == args[2])
-                {
-                    Console.WriteLine(p.ToString());
-                }
-            }
-#else
-            var m = new Man();
-            var pa = new Page();
-            var it = new PageItem
-            {
-                Name = "cout",
-                Description = "Write something to console",
-                Example = "std::cout << \"main function\" << std::endl;",
-                SeeAlso = "http://en.cppreference.com/w/cpp/io/cout"
-            };
-
-            pa.Items.Add(it);
-            m.Pages.Add(pa);
-
-            foreach (var p in m.Pages[page].Items)
-            {
-                if (p.Name == args[2])
+                if (p.Name == args[1])
                 {
                     p.Print();
                 }
             }
-#endif
+        }
+
+        private static string GetFileName(string id)
+        {
+            var files = Directory.GetFiles(Man.ManFolder, "*.wman", SearchOption.AllDirectories);
+            foreach (var file in files)
+            {
+                if (Path.GetFileNameWithoutExtension(file) == id)
+                {
+                    return file;
+                }
+            }
+
+            return id;
         }
     }
 }

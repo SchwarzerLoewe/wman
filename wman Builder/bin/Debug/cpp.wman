@@ -1,0 +1,11 @@
+<Man xmlns="http://schwarzer-loewe.esy.es/schemas/wman" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Man.Items>
+    <scg:List x:TypeArguments="PageItem" Capacity="4">
+      <PageItem Synopsis="{x:Null}" Description="Write something to console" Example="std::cout &lt;&lt; &quot;main function&quot; &lt;&lt; std::endl;" Name="cout" SeeAlso="http://en.cppreference.com/w/cpp/io/cout">
+        <PageItem.Properties>
+          <x:String x:Key="Namespace">std</x:String>
+        </PageItem.Properties>
+      </PageItem>
+    </scg:List>
+  </Man.Items>
+</Man>

@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Telerik.WinControls.UI.RadTreeNode radTreeNode1 = new Telerik.WinControls.UI.RadTreeNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.packageContextMenu = new Telerik.WinControls.UI.RadContextMenu(this.components);
+            this.newFuncContextItem = new Telerik.WinControls.UI.RadMenuItem();
             this.visualStudio2012LightTheme1 = new Telerik.WinControls.Themes.VisualStudio2012LightTheme();
             this.mainMenu = new Telerik.WinControls.UI.RadMenu();
             this.fileMenuItem = new Telerik.WinControls.UI.RadMenuItem();
@@ -47,6 +50,7 @@
             this.documentContainer1 = new Telerik.WinControls.UI.Docking.DocumentContainer();
             this.documentTabStrip1 = new Telerik.WinControls.UI.Docking.DocumentTabStrip();
             this.documentWindow = new Telerik.WinControls.UI.Docking.DocumentWindow();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.mainMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainDock)).BeginInit();
             this.mainDock.SuspendLayout();
@@ -60,6 +64,19 @@
             this.documentTabStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
+            // 
+            // packageContextMenu
+            // 
+            this.packageContextMenu.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.newFuncContextItem});
+            this.packageContextMenu.ThemeName = "VisualStudio2012Light";
+            // 
+            // newFuncContextItem
+            // 
+            this.newFuncContextItem.AccessibleDescription = "New Function";
+            this.newFuncContextItem.AccessibleName = "New Function";
+            this.newFuncContextItem.Name = "newFuncContextItem";
+            this.newFuncContextItem.Text = "New Function";
             // 
             // mainMenu
             // 
@@ -99,6 +116,7 @@
             this.openMenuItem.AccessibleName = "radMenuItem2";
             this.openMenuItem.Name = "openMenuItem";
             this.openMenuItem.Text = "O&pen";
+            this.openMenuItem.Click += new System.EventHandler(this.openMenuItem_Click);
             // 
             // saveMenuItem
             // 
@@ -165,9 +183,20 @@
             // 
             // projectTreeView
             // 
+            this.projectTreeView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.projectTreeView.Cursor = System.Windows.Forms.Cursors.Default;
             this.projectTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.projectTreeView.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.projectTreeView.ForeColor = System.Drawing.Color.Black;
             this.projectTreeView.Location = new System.Drawing.Point(0, 0);
             this.projectTreeView.Name = "projectTreeView";
+            radTreeNode1.ContextMenu = this.packageContextMenu;
+            radTreeNode1.Name = "packageNode";
+            radTreeNode1.Text = "Package";
+            this.projectTreeView.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
+            radTreeNode1});
+            this.projectTreeView.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.projectTreeView.ShowRootLines = false;
             this.projectTreeView.Size = new System.Drawing.Size(185, 356);
             this.projectTreeView.SmallImageList = this.treeImageList;
             this.projectTreeView.TabIndex = 0;
@@ -239,6 +268,10 @@
             this.documentWindow.Size = new System.Drawing.Size(636, 351);
             this.documentWindow.Text = "Document";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Filter = "wman file (*.wman)|*.wman";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,6 +324,9 @@
         private Telerik.WinControls.UI.RadMenuItem exportMenuItem;
         private Telerik.WinControls.UI.RadMenuSeparatorItem fileSeperator;
         private Telerik.WinControls.UI.RadMenuItem exitMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private Telerik.WinControls.UI.RadContextMenu packageContextMenu;
+        private Telerik.WinControls.UI.RadMenuItem newFuncContextItem;
     }
 }
 

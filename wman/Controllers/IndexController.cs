@@ -25,7 +25,7 @@ namespace wman.Controllers
 
             var context = new {files, title = "WMan - Home"};
             var templ = Resources.Template;
-            string content = "{{#each files}}<a href='/Details/item?wman={{this}}'>{{this}}</a>{{/each}}";
+            string content = "{{#each files}}<a href='/Details/list?wman={{this}}'>{{this}}</a>{{/each}}";
             templ = templ.Replace(":content:", content);
 
             var template = Handlebars.Compile("index", templ);
@@ -52,6 +52,25 @@ namespace wman.Controllers
         {
         }
 
+        [Route("/Details/list")]
+        public void List(string wman)
+        {
+            if (string.IsNullOrEmpty(wman))
+            {
+                throw new ArgumentNullException("No Wman given");
+            }
+            
+            Success();
+
+            var templ = Resources.Template;
+            string content = "{{#each files}}<a href='/Details/item?wman={{wman}}&cmd={{cmd}}'>{{cmd}}</a>{{/each}}";
+
+            templ = templ.Replace(":content:", content);
+
+            var template = Handlebars.Compile("list", templ);
+            OutputStream.WriteLine(template(new { title = "WMan - Details", files = new [] {"cout"}, wman }));
+        }
+
         [Route("/Details/item")]
         public void Item(string wman, string cmd, int page = 0)
         {
@@ -61,7 +80,6 @@ namespace wman.Controllers
             }
 
             var m = new Man();
-            var pa = new Page();
             var it = new PageItem
             {
                 Name = "cout",
@@ -70,11 +88,10 @@ namespace wman.Controllers
                 SeeAlso = "http://en.cppreference.com/w/cpp/io/cout"
             };
 
-            pa.Items.Add(it);
-            m.Pages.Add(pa);
+            m.Items.Add(it);
 
             PageItem current = null;
-            foreach (var p in m.Pages[page].Items)
+            foreach (var p in m.Items)
             {
                 if (p.Name == cmd)
                 {

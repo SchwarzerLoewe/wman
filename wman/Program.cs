@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Threading;
-using wman.Controllers;
 using wman.Core;
 using wman.Core.TemplateEngine;
 using wman.Core.WebCore;
@@ -12,7 +10,7 @@ namespace wman
 {
     class Program
     {
-        //wman cpp 3 cout
+        //wman cpp cout
         //wman install cpp
         //wman -web
         static void Main(string[] args)

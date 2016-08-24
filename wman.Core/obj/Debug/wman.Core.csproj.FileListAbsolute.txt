@@ -3,4 +3,3 @@ C:\Users\chris\Documents\GitHub\wman\wman.Core\bin\Debug\wman.Core.dll
 C:\Users\chris\Documents\GitHub\wman\wman.Core\bin\Debug\wman.Core.pdb
 C:\Users\chris\Documents\GitHub\wman\wman.Core\obj\Debug\wman.Core.dll
 C:\Users\chris\Documents\GitHub\wman\wman.Core\obj\Debug\wman.Core.pdb
-C:\Users\chris\Documents\GitHub\wman\wman.Core\obj\Debug\wman.Core.csprojResolveAssemblyReference.cache

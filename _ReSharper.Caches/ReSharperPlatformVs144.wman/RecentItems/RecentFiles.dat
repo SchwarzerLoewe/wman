@@ -3,47 +3,50 @@
     <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:TemplateEngine/f:HandlebarTemplate.cs" caret="326" fromTop="8" />
     <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:TemplateEngine/f:Handlebars.cs" caret="1058" fromTop="9" />
     <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Extensions.cs" caret="823" fromTop="14" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:TemplateEngine/f:HandlebarsService.cs" caret="6536" fromTop="13" />
     <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:TemplateEngine/d:Renderer/f:HelperBlockRenderer.cs" caret="1051" fromTop="11" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:RoutableHttpServer.cs" caret="6708" fromTop="7" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="3702" fromTop="9" />
     <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/f:Man.cs" caret="2703" fromTop="12" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="756" fromTop="9" />
     <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:PageViewer.cs" caret="1124" fromTop="16" />
     <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Resources/f:Template.html" caret="5269" fromTop="4" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="521" fromTop="14" />
-    <File id="8B77F5B0-57D4-4D8B-8A91-F68551BF6215/f:ToDo.txt/s:..?ToDo.txt" caret="79" fromTop="0" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:TemplateEngine/d:Parser/f:HandlebarsParser.cs" caret="8260" fromTop="12" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="2180" fromTop="8" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:IErrorController.cs" caret="117" fromTop="6" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:RoutableHttpServer.cs" caret="6866" fromTop="7" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:TemplateEngine/f:HandlebarsService.cs" caret="2559" fromTop="11" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="657" fromTop="8" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1835" fromTop="8" />
+    <File id="8B77F5B0-57D4-4D8B-8A91-F68551BF6215/f:ToDo.txt/s:..?ToDo.txt" caret="52" fromTop="0" />
+    <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:MainForm.cs" caret="751" fromTop="21" />
   </RecentFiles>
   <RecentEdits>
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:RoutableHttpServer.cs" caret="833" fromTop="12" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="6541" fromTop="8" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="580" fromTop="8" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:RoutableHttpServer.cs" caret="6431" fromTop="18" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:RoutableHttpServer.cs" caret="6202" fromTop="13" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1327" fromTop="15" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1155" fromTop="12" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:RoutableHttpServer.cs" caret="6708" fromTop="7" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="366" fromTop="9" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="2923" fromTop="2" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Resources/f:Template.html" caret="5308" fromTop="18" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="13" fromTop="0" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="974" fromTop="0" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Resources/f:Template.html" caret="4908" fromTop="9" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="2145" fromTop="14" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="3113" fromTop="13" />
-    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="3702" fromTop="9" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1413" fromTop="9" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="2074" fromTop="18" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1243" fromTop="1" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="2897" fromTop="15" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1883" fromTop="15" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Resources/f:Template.html" caret="4977" fromTop="5" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Resources/f:Template.html" caret="130" fromTop="9" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Resources/f:Template.html" caret="130" fromTop="5" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Resources/f:Template.html" caret="5290" fromTop="5" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="2382" fromTop="7" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="2178" fromTop="17" />
-    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="521" fromTop="14" />
-    <File id="8B77F5B0-57D4-4D8B-8A91-F68551BF6215/f:ToDo.txt/s:..?ToDo.txt" caret="79" fromTop="0" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="273" fromTop="2" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1063" fromTop="12" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="1338" fromTop="0" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="2502" fromTop="1" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="7461" fromTop="12" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:RoutableHttpServer.cs" caret="181" fromTop="6" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="6874" fromTop="3" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:RoutableHttpServer.cs" caret="853" fromTop="9" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:RoutableHttpServer.cs" caret="5086" fromTop="4" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:RoutableHttpServer.cs" caret="5465" fromTop="15" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:TemplateEngine/d:Parser/f:HandlebarsParser.cs" caret="8144" fromTop="9" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:RoutableHttpServer.cs" caret="6866" fromTop="10" />
+    <File id="E8AECB01-0CC2-4F75-9715-0313DB24C839/d:WebCore/f:SimpleHttpServer.cs" caret="2165" fromTop="8" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1141" fromTop="5" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1335" fromTop="10" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="760" fromTop="9" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1795" fromTop="5" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1968" fromTop="6" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="2213" fromTop="11" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/d:Controllers/f:IndexController.cs" caret="1615" fromTop="5" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="61" fromTop="3" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="1405" fromTop="7" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="1405" fromTop="18" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="1405" fromTop="8" />
+    <File id="598113BC-F805-4AC1-9F26-ECD562B5D89B/f:Program.cs" caret="162" fromTop="6" />
+    <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:MainForm.cs" caret="1038" fromTop="15" />
+    <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:MainForm.cs" caret="361" fromTop="10" />
+    <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:MainForm.cs" caret="552" fromTop="17" />
+    <File id="ED3287F5-5D16-4CCF-A386-6D45D5290DAF/f:MainForm.cs" caret="751" fromTop="21" />
+    <File id="8B77F5B0-57D4-4D8B-8A91-F68551BF6215/f:ToDo.txt/s:..?ToDo.txt" caret="52" fromTop="0" />
   </RecentEdits>
 </RecentFiles>
